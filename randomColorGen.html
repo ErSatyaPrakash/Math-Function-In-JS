@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="sm">GITHUB</p>
+    <script>
+      var str = "0123456789ABCDEF";
+      var color = "#";
+      for (i = 0; i <= 5; i++) {
+        var rindex = Math.floor(Math.random() * 16);
+        var color = color + str.charAt(rindex);
+        // alert(rindex);
+        // alert(str.charAt(rindex));
+        // alert(color);
+        // alert(color);
+      }
+      var p1 = document.querySelector("#sm");
+      p1.style.background = color;
+      p1.style.fontSize = "50px";
+      p1.innerText = color;
+    </script>
+  </body>
+</html>
